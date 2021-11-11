@@ -36,8 +36,8 @@ $ omf install nemo
 
 
 [mit]:            https://opensource.org/licenses/MIT
-[author]:         https://github.com/{{USER}}
-[contributors]:   https://github.com/{{USER}}/theme-nemo/graphs/contributors
+[author]:         https://github.com/npv12
+[contributors]:   https://github.com/npv12/theme-nemo/graphs/contributors
 [omf-link]:       https://www.github.com/oh-my-fish/oh-my-fish
 
 [license-badge]:  https://img.shields.io/badge/license-MIT-007EC7.svg?style=flat-square
