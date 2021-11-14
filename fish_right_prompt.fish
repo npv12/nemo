@@ -1,5 +1,5 @@
 function fish_right_prompt
-  set -l cwd
+    set -l cwd
     set -l cwd_color (set_color yellow)
     set -l symbol_color (set_color blue)
 
@@ -14,16 +14,16 @@ function fish_right_prompt
     echo -n -s $cwd_color "$cwd"
     
     set_color normal
-
+    
     set -l S (math $CMD_DURATION/1000)
     set -l M (math $S/60)
 
     echo -n -s " "
     if test $M -gt 1
-        echo -n -s $dim_normal $M m
+        echo -n -s $dim_normal $M m  " 死"
     else if test $S -gt 1
         echo -n -s $S s  " 死"
     else
-        echo -n -s $CMD_DURATION ms
+        echo -n -s $CMD_DURATION ms  " 死"
     end
 end
