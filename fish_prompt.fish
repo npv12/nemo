@@ -8,7 +8,7 @@ function fish_prompt
     set cwd (prompt_pwd)
   end
 
-  set -l fish     "⋊>"
+  set -l symbol   ""
   set -l ahead    "↑"
   set -l behind   "↓"
   set -l diverged "⥄ "
@@ -22,9 +22,9 @@ function fish_prompt
   set -l repository_color (set_color $fish_color_cwd 2> /dev/null; or set_color green)
 
   if test $last_command_status -eq 0
-    echo -n -s $success_color $fish $normal_color
+    echo -n -s $success_color $symbol $normal_color
   else
-    echo -n -s $error_color $fish $normal_color
+    echo -n -s $error_color $symbol $normal_color
   end
 
   if git_is_repo
