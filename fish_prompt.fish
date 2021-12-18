@@ -52,7 +52,7 @@ function fish_prompt
   echo -n -s " "
 
   function sideload --description "Sideload a file effortlessly using adb"
-    adb reboot sideload-auto-reboot && adb wait-for-device-sideload && adb sideload a
+    adb reboot sideload-auto-reboot && adb wait-for-device-sideload && adb sideload $argv[1]
   end
 
 end
