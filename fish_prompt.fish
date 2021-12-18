@@ -4,7 +4,7 @@ function fish_prompt
   # All the symbols used here
 
   # Arrow symbol
-  set -l symbol   "" 
+  set -l symbol   "死 " 
   set -l ahead    "↑"
   set -l behind   "↓"
   set -l diverged "⥄ "
@@ -54,5 +54,5 @@ function fish_prompt
   function sideload --description "Sideload a file effortlessly using adb"
     adb reboot sideload-auto-reboot && adb wait-for-device-sideload && adb sideload a
   end
-  
+
 end

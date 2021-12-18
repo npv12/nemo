@@ -20,10 +20,10 @@ function fish_right_prompt
 
     echo -n -s " "
     if test $M -gt 1
-        echo -n -s $dim_normal $M m  " 死"
+        echo -n -s $dim_normal $M m 
     else if test $S -gt 1
         echo -n -s $S s  " 死"
     else
-        echo -n -s $CMD_DURATION ms  " 死"
+        echo -n -s $CMD_DURATION ms 
     end
 end
