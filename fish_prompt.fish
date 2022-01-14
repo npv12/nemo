@@ -55,4 +55,10 @@ function fish_prompt
     adb reboot sideload-auto-reboot && adb wait-for-device-sideload && adb sideload $argv[1]
   end
 
+  function dl_sideload --description "Download and sideload a file effortlessly using adb"
+    set file_name (echo $argv[1] | rev | cut -d '/' -f 1 | rev)
+    curl $argv[1] -o $file_name
+    sideload $file_name
+  end
+
 end
